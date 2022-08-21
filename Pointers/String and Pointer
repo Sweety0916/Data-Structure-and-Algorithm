@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   
+    int a[]={1,2,3,4};
+    char b[]="abc";
+    cout<<a<<endl;   // it will give the adrs of char array
+    cout<<b<<endl;   // it give actual value of char b array
+     cout<<b[0]<<endl; 
+     
+     
+    char *c=&b[0];  
+    cout<<c<<endl; // not printing of adrs of b instead of that it will print actual value of b (abc)
+    
+    char c1='a';
+    char *pc=&c1;
+    
+    cout<<c1<<endl;
+    cout<<pc<<endl; // it should print adrs of c1 but it will print till it not find \0 some garbage value with a string
+    
+    char str[]="abcde";
+    char* strr="abcde";
+    
+    cout<<str<<endl;
+    cout<<strr<<endl;
+    return 0;
+}
