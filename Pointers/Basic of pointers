@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int i=10;
+   cout<<i<<endl;
+   int *p=&i;
+   cout<<p<<endl;
+   cout<<*p<<endl;
+   i++;
+   cout<<"************"<<endl;
+   cout<<i<<endl;
+   cout<<p<<endl;
+   cout<<*p<<endl;
+   int k=*p;
+   k++;
+    cout<<"************"<<endl;
+   cout<<i<<endl;
+   cout<<k<<endl;
+   cout<<*p<<endl;
+   p++;
+   cout<<"************"<<endl;
+   cout<<p<<endl;
+   p=p+2;
+   cout<<"************"<<endl;
+   cout<<p<<endl;
+    p=p-2;
+   cout<<"************"<<endl;
+   cout<<p<<endl;
+    return 0;
+}
