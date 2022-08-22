@@ -1,0 +1,56 @@
+************************************ important points***************************************
+
+// stack  store or create all the memory int i=10; int a[20] it is limited in sizeof in this we ssign size of array at compile time
+// static allocation 
+ int arr[100];  :- assigning size of array at compile time
+
+    
+// Heap  we can store array  according to our choice at run time it store dynamic memory  allocation  : int a[n]
+   syntax of creating memory at heap
+
+
+ int *p=new int ;     // allocate 4 byte on heap at the same time 8
+                      // byte at stack bcq of *p
+
+int n;cin>>n; int *pa2=new int[n] // assigning array size at compile time
+
+
+
+
+  *p=10;
+  cout<<*p<<endl;
+  cout<<p<<endl;
+  
+  double*pd= new double;
+  char *c=new char;
+  
+  
+  ******** CODE *************
+  
+  #include <iostream>
+using namespace std;
+int main()
+{
+  int *p=new int ;
+  *p=10;
+  cout<<*p<<endl;
+  cout<<p<<endl;
+  
+  double*pd= new double;
+  char *c=new char;
+   
+   int *pa= new int[50];
+   int n;
+   cout<<" enter num of elements"<<endl;
+   cin>>n; 
+   int*pa2=new int[n];
+   
+ for(int i=0;i<n;i++){
+     cin>>a[i];
+ }
+  
+   
+    return 0;
+}
+
+   
