@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   
+    int i=10;
+    int *p=&i;
+    print(p); // calling print function in main function
+    cout<<p<<endl;
+    // calling increamentpointer function in main function 
+    increamentpointer(p);// not change bcq it just working as the copy of adrs of print function p pointter
+     
+    cout<<p<<endl;
+int a[]={1,2,3,4};
+    char b[]="abc";
+    cout<<a<<endl;   // it will give the adrs of char array
+    cout<<b<<endl;   // it give actual value of char b array
+     cout<<b[0]<<endl; 
+     
+     return 0;
+     }
