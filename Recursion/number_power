@@ -1,0 +1,32 @@
+// eg:-3^3=3*3*3=9*3=27, 4^4=256=64*4    
+
+#include <iostream>
+using namespace std;
+
+int fact(int m,int n){
+
+if(n==0)   // if power is 0           
+{
+    return 1;
+
+}
+if(m==0){ // if base is 0 it will return 0
+    return 0;
+}
+
+
+
+int smallfact=m*fact(m,n-1); // calling m^(n-1) only it will call finally m*m^(n-1)
+return smallfact;
+    
+}
+
+int main(){
+int n,m;
+cin>>m>>n;
+int output=fact(m,n);
+
+cout<<output<<endl;
+return 0;
+}
+
