@@ -1,0 +1,72 @@
+TIME COMPLEXITY:
+
+linear search TC:- check linear all element one by one 
+
+BIG O (1) best case
+BIG O (n) worst case {not getting element}
+
+INSERTION SORT :
+
+selection sort:
+ sort element : go to each element and find min, 
+kn+k(n-1)+k(n-2)+k(n-3).......n
+
+T(n)=kn(n+1)/2= kn^2/2+ kn/2
+
+BIG O (n2)
+
+
+Theoretical Analysis recursive algo:
+
+int factorial(int n){
+if(n==0){
+return 1;}
+return n*factorial(n-1)
+}
+
+T(n)=T(n-1)+K
+T(n-1)=T(n-2)+K
+T(n-2)=T(n-3)+K
+T(n-3)=T(n-4)+K
+:
+:
+:
+T(1)=K+T(0)
+T(0)=K
+
+T(n)=K+K+K+K.......  n+1 times= k(n+1)= kn
+
+
+Factorial is BIG O (n)
+ SC BIG O(N)
+_____________________________
+Binary search  BIG O (log n)
+
+2^n= eg:- for 1024 elements we have to check only 10 step 2^20=1024
+________________________________
+Merge sort :-  BIG O( nLOG n)
+___________________________________
+insertion sort
+
+WORST CASE BIG (N2)
+{
+k+2k+3k+4k+......(n-1)k
+= k(n*n+1)/2= n2
+
+}
+
+BEST BIG O(N)
+
+_______________________________________________
+SELECTION SORT :- JUST GO TO ALL ELEMENTS AND FIND MIN OF THAT Kn( finding the element to n position ) PUT THAT INTO FIRST PLACE  do this again and again
+ kn+k(n-1)+k(n-2)......k
+k(1+2+3+4+5......+n) = kn*(n+1)/2= n2
+
+BIG O(N2) FOR ALL BEST, WORST CASE
+_____________________________________________
+ 
+FIBO IS BIG O(2^N)
+SC BIG O(n)
+_______________________________________
+BUBBLE SORT : SC BIG O (1)
+______________________________________
