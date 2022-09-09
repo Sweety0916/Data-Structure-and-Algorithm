@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int reverseNumber(int n) {
+ 
+   int temp,sum;
+ 
+   if(n>0){
+  
+      temp = n%10;
+      sum = sum*10 + temp;
+      reverseNumber(n/10);
+} 
+
+}
+
+
+int main() {
+ 
+  int n,reverse;
+  cin >> n;
+
+   reverse = reverseNumber(n);
+ 
+   cout <<reverse;
+ 
+   return 0;
+}
