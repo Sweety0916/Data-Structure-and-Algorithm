@@ -1,0 +1,109 @@
+
+//*******************  factorial ******************
+
+
+// #include <iostream>
+
+// using namespace std;
+// int fact(int n){
+//     if(n>=1)
+//     { return fact(n-1)*n;
+//     }
+      
+    
+//     else if(n==0)
+//     return 1;
+//     else
+//     return 0;
+// }
+// int main()
+// {
+//     int n;
+//     cin>>n;
+
+//     cout<<fact(n)<<endl;
+//     return 0;
+// }
+
+
+// ******************  print n number *********************
+
+
+// #include <iostream>
+
+// using namespace std;
+// void recursion(int n){
+//     if(n>0)
+//         recursion(n-1);\
+//          cout<<n<<endl;
+    
+// }
+// int main(){
+//     int x;cin>>x;
+//     recursion(x);
+//     return 0;
+// }
+
+
+
+
+//**************  fibonaccie seriess by one case **********************
+
+
+// #include <iostream>
+
+// using namespace std;
+// int fibonaccie(int n){
+//     if(n==0)
+//     {return 0;
+//     }
+      
+//     else if(n==1){
+//         return 1;
+//     } 
+//   else
+//     return fibonaccie(n-1)+fibonaccie(n-2);
+   
+// }
+// cout<
+// int main()
+// {
+//     int n;
+//     cin>>n;
+
+//     cout<<fibonaccie(n)<<endl;
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+//**************  fibonaccie seriess by one case **********************
+
+#include <iostream>
+
+using namespace std;
+int fibonaccie(int n){
+    if(n<=1)
+    {return n;
+    }
+      
+   
+   else
+    return fibonaccie(n-1)+fibonaccie(n-2);
+   
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+
+    cout<<fibonaccie(n)<<endl;
+    return 0;
+}
+
