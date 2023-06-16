@@ -1,0 +1,86 @@
+
+// #include <iostream>
+// #include<bits/stdc++.h>
+
+// using namespace std;
+
+// int main()
+// {
+//     char str1[15]="heyiam";
+//     char str2[15]="sweety";
+    
+//     //strcpy(str1,str2);
+//     // swap(str1,str2);
+    
+//     string ans=str1;
+//     str1=str2;
+//     str2=ans;
+//     cout<<str1<<str2<<endl;
+    
+//     cout<<"after copy s1 to s2"<<endl;
+//      strcpy(str1,str2);
+     
+//      cout<<str2<<endl;
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int fibo(int n){
+    int F[n+1];
+    F[0]=0;
+    F[1]=1;
+    
+    for(int i=2;i<=n;i++){
+        F[i]=F[i-1]+F[i-2];
+        
+       
+    }
+     return F[n];
+}
+
+int main(){
+    int n;
+    cout<<"enter the value of n"<<endl;
+    
+    cin>>n;
+    cout<<fibo(n);
+    return 0;
+    
+}
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int fibo(int n){
+//     if(n<0) return 0;
+//     if(n==0) return 0;
+//     if(n==1) return 1;
+    
+//     int fibooo=fibo(n-1)+fibo(n-2);
+//     return fibooo;
+// }
+
+// int main(){
+//     int n;cin>>n;
+//     cout<<"fibo"<<"\t"<<fibo(n)<<endl;
+//     return 0;
+// }
+
+
+
+
+
+
+
