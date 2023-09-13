@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int reverse_number(int n){
+    int rem=0;
+    int num=0;
+    
+   while(n!=0) {
+    num=n%10;
+    rem=(rem*10)+num;
+    n=n/10;
+    
+  }
+   return rem;
+    
+}
+
+int main()
+{
+    int n=544356;
+   cout<<reverse_number(n);
+
+    return 0;
+}
