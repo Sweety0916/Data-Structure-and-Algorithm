@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+int fibonacci_number(int n){
+    if(n<=1) return n;
+    
+    int fibo=fibonacci_number(n-1)+fibonacci_number(n-2);
+    
+    return fibo;
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<fibonacci_number(n);
+    return 0;
+}
