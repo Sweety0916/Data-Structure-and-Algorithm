@@ -1,0 +1,82 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+string vowel_check(char str){
+   // int n=str.size();
+    int count=0;int i=0;
+  // toupper(str);
+  while(str[i]!='\0')
+{
+        if(str[i]=='a'|| str[i]=='e'|| str[i]=='i'|| str[i]=='o'|| str[i]=='u'|| str[i]=='A'|| str[i]=='E'|| str[i]=='I'|| str[i]=='O'|| str[i]=='U'){
+            count++;
+           i++;
+        }
+        cout<<count<<endl;
+    }
+    return str;
+}
+
+int main()
+{
+    char str=" hello apple sweety";
+    cout<<vowel_check(str)<<endl;
+
+    return 0;
+}
+
+
+
+// #include <iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// string vowel_check(string str){
+//     int n=str.size();
+//     unordered_map<char,int>mp;
+    
+//     for(int i=0;i<n;i++){
+//         mp[str[i]]++;
+//     }
+    
+//     if(!mp.empty() &&( mp[0]=='a'||mp[0]=='e' )){
+//         cout<<str.size()<<endl;
+        
+//     }
+//     return str;
+// }
+
+// int main()
+// {
+//     string str= "sweety apple hello";
+//     cout<<vowel_check(str)<<endl;
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
