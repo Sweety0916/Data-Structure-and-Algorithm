@@ -1,3 +1,71 @@
+// using stack
+#include <iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+string reverse_string(string str){
+    
+    int n=str.size();
+   
+    stack<char>st;
+    
+    for(int i=0;i<n;i++){
+        st.push(str[i]);
+    }
+    while(!st.empty()){
+        cout<<st.top();
+        st.pop();
+    }
+    
+    return str;   
+    
+}
+
+int main()
+{
+    string str="i love coding";
+    cout<<reverse_string(str)<<endl;
+
+    return 0;
+}
+
+
+//  using another string str
+
+#include <iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+string reverse_string(string str){
+    
+    int n=str.size();
+   
+    string st;
+    
+    for(int i=n;i>=0;i--){
+        st.push_back(str[i]);
+        
+       
+    }
+    
+     cout<<st<<endl;
+     return str;
+    
+}
+
+int main()
+{
+    string str="i love coding";
+    cout<<reverse_string(str)<<endl;
+
+    return 0;
+}
+
+
+
+// using temp
 #include <iostream>
 
 using namespace std;
