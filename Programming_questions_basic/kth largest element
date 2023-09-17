@@ -1,0 +1,24 @@
+int findKthLargest(vector<int>& nums, int k) {
+
+        // using max heap
+        // priority_queue<int>min_heap(nums.begin(),nums.end());
+        //  int ans=0;
+
+        // while(k--){
+        //     ans=min_heap.top();
+        //     min_heap.pop();
+        // }
+        // return ans;
+
+
+     //  using min heap
+        priority_queue<int,vector<int>,greater<int>>min_heap;
+
+        for(auto x:nums){
+            min_heap.push(x);
+            if(min_heap.size()>k){
+                min_heap.pop();
+            }
+        }
+       return  min_heap.top();
+    }
