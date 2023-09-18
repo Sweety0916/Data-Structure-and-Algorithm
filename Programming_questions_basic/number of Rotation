@@ -1,0 +1,14 @@
+int findKRotation(int arr[], int n) {
+	    // code here
+	    
+	    int mini=arr[0];
+	    int mini_index=0;
+	    
+	    for(int i=0;i<n;i++){
+	        if(mini>arr[i]){
+	            mini=arr[i];
+	            mini_index=i;
+	        }
+	    }
+	    return mini_index;
+	}
